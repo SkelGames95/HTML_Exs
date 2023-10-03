@@ -1,0 +1,3 @@
+Come posso andare avanti per migliorare la mia Navbar in relazione all'immagine fornita?
+Cosa sbaglio?
+Come posso nascondere le options della barra di selezione e vedere solo la scritta Dropdown accanto alla freccia della barra?
