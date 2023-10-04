@@ -20,19 +20,64 @@
     </header>
     <div>
       <label for="email"><b>Email:</b></label>
-      <input type="email" name="email" id="email">
-      <br><br>
+      <input type="email" name="email" id="email" />
+      <br /><br />
       <label for="psw"><b>Password:</b></label>
-      <input type="password" name="psw" id="psw" minlength="8" maxlength="20">
-      <br><br>
+      <input type="password" name="psw" id="psw" minlength="8" maxlength="20" />
+      <br /><br />
       <label for="confpsw"><b>Confirm Password:</b></label>
-      <input type="password" name="confirm psw" id="confpsw">
+      <input type="password" name="confirm psw" id="confpsw" />
+      <br /><br />
+    </div>
+    <hr />
+    <div>
+      <h2>User Data</h2>
+      <label for="name"><b>Complete Name:</b></label>
+      <input
+        type="text"
+        name="Complete Name"
+        id="name"
+        placeholder="Name Surname"
+      />
+      <br /><br />
+      <label for="bday"><b>Birthday</b></label>
+      <input type="date" name="bday" id="bday" placeholder="dd-mm-yyyy" min="1940-01-01" max="2010-12-31"/>
+      <br /><br />
+      <label for="tel"><b>Phone:</b></label>
+      <input type="tel" name="tel" id="tel" placeholder="+39 333 333 3333" />
+      <br /><br />
+    </div>
+    <hr />
+    <div>
+      <label for="plans"><h2>Subscription Plans</h2></label>
+      <select name="plans" id="plans">
+        <option value="none"> ---- ----</option>
+        <option value="free">Free Access</option>
+        <option value="premium">Premium - 39.99$</option>
+        <option value="exclusive">Exclusive - 69.99$</option>
+        <option value="amazing - 119.95$/y">Amazing - 119.95$</option>
+      </select>
+      <br /><br />
+      <i>text based on the selected plan</i>
+      <br /><br />
+      <label for="Pro">
+        <input type="checkbox" name="Pro" id="ProPlan" />
+        <b>Pro Plan:</b> choose the add-free contents access to whichever plan
+        you selected for only +3.00$ per month<br />
+        <b>*the add-free option is included in the Amazing Plan</b><br />
+        <b>**the Pro Plan is selectable for a minimum of three months</b>
+      </label>
     </div>
     <hr>
     <div>
-      <label for="name"><b>Complete Name:</b></label>
-      <input type="text" name="Complete Name" id="name" placeholder="Name Surname">
-    <br><br>
+      <h2>Payment Method</h2>
+      <input type="number" name="credit-card" id="cc" minlength="16" maxlength="16" placeholder="Card Number">
+      <br><br>
+      <label for="CVC"><b>CVC</b></label>
+      <input type="number" name="CVC" id="CVC" minlength="3" maxlength="3" placeholder="xxx" >
+      <br><br>
+      <label for="exp"><b>Expiry Date</b></label>
+      <input type="date" name="exp" id="exp" placeholder="mm-yyyy" min="2023-12-31" max="2099-12-31">
     </div>
   </body>
 </html>
