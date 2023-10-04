@@ -41,7 +41,14 @@
       />
       <br /><br />
       <label for="bday"><b>Birthday</b></label>
-      <input type="date" name="bday" id="bday" placeholder="dd-mm-yyyy" min="1940-01-01" max="2010-12-31"/>
+      <input
+        type="date"
+        name="bday"
+        id="bday"
+        placeholder="dd-mm-yyyy"
+        min="1940-01-01"
+        max="2010-12-31"
+      />
       <br /><br />
       <label for="tel"><b>Phone:</b></label>
       <input type="tel" name="tel" id="tel" placeholder="+39 333 333 3333" />
@@ -51,7 +58,7 @@
     <div>
       <label for="plans"><h2>Subscription Plans</h2></label>
       <select name="plans" id="plans">
-        <option value="none"> ---- ----</option>
+        <option value="none">---- ----</option>
         <option value="free">Free Access</option>
         <option value="premium">Premium - 39.99$</option>
         <option value="exclusive">Exclusive - 69.99$</option>
@@ -68,16 +75,78 @@
         <b>**the Pro Plan is selectable for a minimum of three months</b>
       </label>
     </div>
-    <hr>
+    <hr />
     <div>
       <h2>Payment Method</h2>
-      <input type="number" name="credit-card" id="cc" minlength="16" maxlength="16" placeholder="Card Number">
-      <br><br>
+      <input
+        type="number"
+        name="credit-card"
+        id="cc"
+        minlength="16"
+        maxlength="16"
+        placeholder="Card Number"
+      />
+      <br /><br />
       <label for="CVC"><b>CVC</b></label>
-      <input type="number" name="CVC" id="CVC" minlength="3" maxlength="3" placeholder="xxx" >
-      <br><br>
+      <input
+        type="number"
+        name="CVC"
+        id="CVC"
+        minlength="3"
+        maxlength="3"
+        placeholder="xxx"
+      />
+      <br /><br />
       <label for="exp"><b>Expiry Date</b></label>
-      <input type="date" name="exp" id="exp" placeholder="mm-yyyy" min="2023-12-31" max="2099-12-31">
+      <input
+        type="date"
+        name="exp"
+        id="exp"
+        placeholder="mm-yyyy"
+        min="2023-12-31"
+        max="2099-12-31"
+      />
+    </div>
+    <hr />
+    <div>
+      <h2>Billing Address</h2>
+      <label for="name"><b>Name:</b></label>
+      <input type="text" name="name" id="name" placeholder="Name" />
+      <br /><br />
+      <label for="surname"><b>Surname:</b></label>
+      <input type="text" name="surname" id="surname" placeholder="Surname" />
+      <br /><br />
+      <label for="road"><b>Road:</b></label>
+      <input
+        type="text"
+        name="road"
+        id="road"
+        placeholder="Road, N"
+      />
+      <br /><br />
+      <label for="city"><b>City:</b></label>
+      <input
+        type="text"
+        name="city"
+        id="city"
+        placeholder="City (province)"
+      />
+      <br /><br />
+      <label for="zip"><b>Zip Code:</b></label>
+      <input
+        type="text"
+        name="zip"
+        id="zip"
+        placeholder="zip code"
+      />
+      <br /><br />
+      <label for="state"><b>State:</b></label>
+      <input type="text" name="state" id="state" placeholder="State" />
+      <br />questo lo farei con il select ma non so come inserire la lista di
+      tutti gli stati <br /><br />
     </div>
   </body>
+  <footer>
+    <button>Submit</button>
+  </footer>
 </html>
